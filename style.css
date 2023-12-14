@@ -1,0 +1,227 @@
+/* Reset de estilos básicos */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+figure,
+figcaption,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+header {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    margin-top: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5em;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: #d9534f;
+    margin-bottom: 1em;
+}
+
+p {
+    color: #999;
+}
+
+/* Estilo de las tarjetas de habilidades */
+.skill-cards {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-card {
+    text-align: center;
+    justify-content: center;
+    background-color: #333;
+    padding: 1em;
+    border-radius: 8px;
+    width: 12%;
+    margin: 0 0.5em 1em;
+}
+
+.skill-card img {
+    max-width: 100px;
+}
+
+/* Estilo del Curriculum */
+#curriculum {
+    text-align: center;
+}
+
+#curriculum img {
+    width: 60%;
+}
+
+/* Estilo de los proyectos */
+#projects {
+    text-align: center;
+}
+
+#projects ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#projects li {
+    width: 45%;
+    margin-bottom: 2em;
+}
+
+#projects .calculator img {
+    width: 62%;
+    border-radius: 8px;
+}
+
+#projects .blog img {
+    width: 59%;
+    border-radius: 8px;
+}
+
+/* Estilo básico para los enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo para los enlaces cuando están siendo 'hovered' o 'focus' */
+a:hover {
+    text-decoration: underline;
+    color: #d9534f;
+}
+
+a:focus,
+a:visited {
+    color: #d9534f;
+}
+
+/* Estilo para los enlaces dentro del nav cuando están siendo 'hovered' o 'focus' */
+nav a:hover,
+nav a:focus,
+nav a:visited {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Estilo de la sección de contacto */
+#contact {
+    text-align: center;
+}
+
+#contact ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+}
+
+#contact li {
+    text-align: center;
+    margin: 2em;
+}
+
+/* Estilo del botón */
+.button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button img {
+    width: 2em;
+}
+
+/* Estilo del botón al pasar el mouse */
+.button:hover {
+    background-color: #a94442;
+    color: #fff;
+}
+
+.button:focus {
+    color: #d9534f;
+}
+
+/* Estilo del botón cuando está activo (por ejemplo, haciendo clic) */
+.button:active {
+    transform: scale(0.95);
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+/* Estilos responsive */
+@media only screen and (max-width: 890px) {
+    main {
+        padding: 1em;
+    }
+
+    #projects li {
+        width: 100%;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    .skill-card {
+        width: 30%;
+    }
+
+    #contact ul {
+        margin: 1em;
+    }
+    
+    #contact li {
+        margin: 1em;
+    }
+}
+
+/* Media Query para pantallas más pequeñas, como teléfonos móviles */
+@media only screen and (max-width: 560px) {
+    .skill-card {
+        width: 100%;
+    }
+}
